@@ -24,7 +24,7 @@ describe("fetchAllMovies", () => {
     expect(Array.isArray(result)).toBe(true); // result is an array
     expect(result).toBeDefined(); // Ensure result is defined
   });
-  test("SQL command returns an array with one movie when one movie is in the database", async () => {
+  test("SQL command returns an array with one movie WHEN one movie is in the database", async () => {
     // act
     await pool.query(`
         INSERT INTO movies (movie_name, release_date, box_office_gross, lead_actor, director) VALUES
